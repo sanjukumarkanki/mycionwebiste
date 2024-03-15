@@ -152,6 +152,7 @@ header button{
     background-color: var(--formbg);
     text-align: center;
     padding: var(--medium-padding-10);
+    box-shadow: 0 0 5px 2px #ccc;
 }
 
 
@@ -333,15 +334,19 @@ input:focus, select:focus{
     border: none;
     outline: none;
     cursor: pointer;
+    padding: var(--small-padding-15);
     background-color: var(--bgColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: var(--small-16-fontSuze);
     line-height: 1.09rem;
     font-weight: 700;
+}
+
+.book-appointment-container > div > button >span{
+    font-size: 0.5rem;
 }
 
 .book-appointment-container{
@@ -705,11 +710,17 @@ font-weight: 600;
         width: 95%;
     }
 
+    .book-appointment-container > div > button >span{
+        font-size: var(--medium-33-font-size);
+    }
+
     .banner__heading > div> p > img{
         width: 1.66rem;
         height: 1.50rem;
     }
-
+    .small-devices-form-container form{
+        box-shadow: none;
+    }
     .banner__heading > div > p >span{
         width: 14rem;
         font-size: 0.72rem;
